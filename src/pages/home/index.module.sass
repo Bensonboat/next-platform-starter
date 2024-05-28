@@ -1,0 +1,62 @@
+.homePage
+    width: 100%
+    height: 100%
+    max-width: 192rem
+    height: 100%
+    overflow: scroll
+    margin: auto
+    position: relative
+    .bannerBlock
+        width: 100%
+        height: 140px
+        position: relative
+    .campaignContentContainer
+        width: 100%
+        height: 100%
+        position: absolute
+    .desktopBgBlock
+        position: absolute
+        width: 100%
+        height: 286rem
+        top: 0
+        left: 0
+        .desktopBg
+            position: relative !important
+            width: 100%
+            height: 100%
+    .mobileBgBlock
+        display: flex
+        flex-direction: column
+        position: absolute
+        width: 100%
+        top: 0
+        left: 0
+        max-height: 150rem
+        overflow: hidden
+        .mobileBg
+            position: relative !important
+            width: 100%
+            height: 47rem
+            margin-top: -.1rem
+    .backToTopIcon
+        width: 50px
+        height: 50px
+        position: fixed
+        right: 2rem
+        bottom: 5rem
+        display: flex
+        a
+            width: 100%
+            height: 100%
+            position: relative
+            z-index: 999
+
+@media screen and (min-width: 1920px) 
+    .homePage
+        // height: 315rem
+        .bannerBlock
+            width: 100%
+            height: 300px
+        .backToTopIcon
+            width: 10rem
+            height: 10rem

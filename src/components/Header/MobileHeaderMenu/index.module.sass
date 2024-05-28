@@ -1,0 +1,69 @@
+@import 'styles/colors.sass'
+
+.mobileHeaderMenu
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    .bg
+        width: 100vw
+        height: 100vh
+        background-color: white
+        opacity: .8
+        position: fixed
+        top: 0
+        left: 0
+        z-index: 9999
+    .menu
+        width: 16rem
+        height: 100%
+        background-color: #fff
+        left: 0
+        top: 0
+        position: fixed
+        animation: slide-in 0.3s ease-in-out
+        opacity: .9
+        color: $base-black
+        padding: 0 2rem
+        font-weight: 600
+        z-index: 999999
+        box-shadow: 4px 4px 10px rgba(29, 37, 45, 0.1)
+    .drawerBlock
+        color: $base-black
+        font-size: 3.5rem
+        width: fit-content
+        height: 6rem
+        display: flex
+        align-items: center
+        &:hover
+            cursor: pointer
+    .option
+        text-decoration: none
+        margin-top: 2rem
+        &:hover
+            cursor: pointer
+            transition: .5s
+            color: $base-blue
+            // background: linear-gradient(0, #d8c4f8 0%, #9dc4f7 100%)
+            // -webkit-background-clip: text
+            // -webkit-text-fill-color: transparent
+    .highlight
+        background: linear-gradient(0, #d8c4f8 0%, #9dc4f7 100%)
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+    .hostPrivilege
+      color: $base-grey
+      display: flex
+      align-items: center
+      margin-top: 5rem
+      .icon
+        margin-right: 1rem
+        font-size: 2rem
+
+
+@keyframes slide-in
+  0%
+    transform: translateX(-100%)
+  100%
+    left: 0

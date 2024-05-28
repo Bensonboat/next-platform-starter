@@ -1,0 +1,92 @@
+.infoBlock
+    margin-top: 3rem
+    .titleBlock
+        width: 30rem
+        height: 5rem
+        position: relative
+        margin: 1rem auto 0 auto
+        .title
+            color: #FFF
+            font-family: Inter
+            font-size: 1.4rem
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+        .rewardInfoBg
+            position: absolute
+            width: 100%
+            height: 100%
+    .detailsInfoBlock
+        background: rgba(0, 0, 0, 0.40)
+        width: 30rem
+        height: 28rem
+        padding: 2rem 1rem
+        position: relative
+        margin: 2rem auto 0 auto
+        overflow: scroll
+        .rewardImage
+            width: 28rem
+            height: 15rem
+            margin: auto
+            position: relative
+            overflow: hidden
+            background-position: center
+        .customContentBlock
+            color: #FFF
+            font-family: Inter
+            font-size: 1rem
+            font-style: normal
+            font-weight: 400
+            line-height: normal
+            // margin-top: 3rem
+            img
+                display: none
+    
+@media screen and (min-width: 1400px) 
+    .campaignInfoBlock
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: row-reverse
+        width: 1200px
+        margin: 80px auto
+        .infoBlock
+            .titleBlock
+                width: 560px
+                height: 90px
+                .title
+                    font-size: 24px
+            .detailsInfoBlock
+                width: 560px
+                height: 620px
+                padding: 31px 21px
+                .rewardImage
+                    width: 500px
+                    height: 309px
+                    margin: 30px auto 0 auto
+                .customContentBlock
+                    font-size: 18px
+                .rewardCustomContent
+                    margin-top: 60px
+        .bigRewardImg
+            width:  1120px
+            height: 800px
+            position: fixed
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            background-position: center
+            background-size: 100%
+            z-index: 999
+        .largeImageBg
+            width: 100vw
+            height: 100%
+            position: fixed
+            top: 0
+            left: 0
+            background-color: rgba(0,0,0,.5)
+            z-index: 99
