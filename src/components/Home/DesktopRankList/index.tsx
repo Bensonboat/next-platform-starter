@@ -105,9 +105,9 @@ const DesktopRankList = (props: ICampaignDetailBlockProps) => {
                     </div>
                 </div>
             </div>
-            {props.selectedCampaign.rank.slice(3).map((item) => {
+            {props.selectedCampaign.rank.slice(3).map((item, index) => {
                 return (
-                    <div className={style.rankingRow}>
+                    <div className={style.rankingRow} key={index}>
                         <div className={style.bg}>
                             <Image
                                 fill
